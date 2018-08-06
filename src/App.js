@@ -44,6 +44,10 @@ class App extends Component {
             .translate([800/2, 450/2])
     }
 
+    handleColorChange(countryIndex) {
+        return `rgba(20,20,20, ${(1/this.state.worldData.length * countryIndex) + .1})`
+    }
+
     handleCountryClick(countryIndex) {
         let targetCountry = this.state.worldData[countryIndex].properties.name;
         this.setState({
@@ -64,6 +68,7 @@ class App extends Component {
                                     d = { geoPath().projection(this.projection())(d) }
                                     className="country"
                                     onClick = { () => this.handleCountryClick(i)}
+                                    fill= {`${this.handleColorChange(i)}`}
                                     stroke= "#FFFFFF"
                                     strokeWidth= {0.5}
                                 />
