@@ -56,3 +56,12 @@ body {
   border-top-color: black;
   border-top: 10px;
 }
+
+
+.country {
+  cursor: pointer;
+}
+
+.country:hover{
+  fill: #ed2e31;
+}
