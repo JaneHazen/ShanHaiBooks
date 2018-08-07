@@ -40,9 +40,13 @@ class Popup extends Component {
     }
 
     render(){
+        let innerPopupClass = 'popupInner';
+        if (this.state.books.books && this.state.books.books.length > 2) {
+            innerPopupClass = 'popupInnerWithScroll';
+        }
         return(
             <div className='popup'>
-                <div className='popupInner' >
+                <div className={innerPopupClass}>
                     <button className="close" aria-label="Close" onClick={this.props.closePopup}><span aria-hidden="true">&times;</span></button>
                     <div className="container-fluid">
                         <h2 className="countryName">{this.props.country}</h2>

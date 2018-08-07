@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84c50572-90f5-4490-848b-c5d9481390e2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
@@ -87,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Popup.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Popup.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+            <state relative-caret-position="189">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -104,11 +101,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+            <state relative-caret-position="115">
+              <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -125,6 +122,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>NRHP</find>
+      <find>popupInn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,8 +145,8 @@
         <option value="$PROJECT_DIR$/private.json" />
         <option value="$PROJECT_DIR$/api/models/book.js" />
         <option value="$PROJECT_DIR$/api/routes/books.js" />
-        <option value="$PROJECT_DIR$/src/Popup.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/Popup.js" />
       </list>
     </option>
   </component>
@@ -262,7 +260,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533573837292</updated>
-      <workItem from="1533573838655" duration="21817000" />
+      <workItem from="1533573838655" duration="22624000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;3">
       <created>1533606798347</created>
@@ -306,14 +304,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533615299130</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first axios call rendering books from each country in popup">
+      <created>1533619981728</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533619981728</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21817000" />
+    <option name="totallyTimeSpent" value="22624000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="258" y="653" width="1124" height="662" extended-state="0" />
+    <frame x="235" y="190" width="1124" height="662" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5612009" visible="true" weight="0.22252253" />
@@ -370,7 +375,8 @@
     <MESSAGE value="add get and delete methods to books w/ mongoose + mongo" />
     <MESSAGE value="patch method for Book model/route with mongoose/mongo" />
     <MESSAGE value="formatting HTTP verb responses on API" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting HTTP verb responses on API" />
+    <MESSAGE value="first axios call rendering books from each country in popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="first axios call rendering books from each country in popup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -428,13 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models/book.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -462,20 +461,27 @@
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Popup.js">
+    <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
+    <entry file="file://$PROJECT_DIR$/private.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

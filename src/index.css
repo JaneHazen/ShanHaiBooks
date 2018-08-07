@@ -36,6 +36,19 @@ body {
   padding: 15px;
 }
 
+.popupInnerWithScroll {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  height: 350px;
+  overflow: scroll;
+  margin: auto;
+  background: white;
+  padding: 15px;
+}
+
 .countryName {
   font-size: 20px;
   font-weight: bold;
