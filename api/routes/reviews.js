@@ -73,17 +73,36 @@ router.post('/', (req, res, next) => {
 });
 
 router.get('/:reviewId', (req, res, next) => {
-    res.status(200).json({
-        message: 'order details',
-        reviewId: req.params.reviewId
-    });
+    Review.findById(req.params.reviewId)
+        .exec()
+        .then(review => {
+            if(!review){
+                return res.status(404).json({message: 'not found'});
+            }
+            res.status(200).json({
+                review: review,
+                request: {
+                    type:'GET',
+                    url: 'http://localhost:3000/books'
+                }
+            })
+        })
+        .catch(err => {res.status(404).json({error: err})});
 });
 
 router.delete('/:reviewId', (req, res, next) => {
-    res.status(200).json({
-        message: 'order deleted details',
-        reviewId: req.params.reviewId
-    });
+    Order.remove({_id: req.params.reviewId})
+        .exec()
+        .then(result => {
+            res.status(200).json({
+                message: 'Review deleted',
+                request: {
+                    type: 'GET',
+                    url: 'http://localhost:3000/reviews'
+                }
+            });
+        })
+        .catch(err => {res.status(404).json({error:err})});
 });
 
 
