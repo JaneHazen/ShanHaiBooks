@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84c50572-90f5-4490-848b-c5d9481390e2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/api/models/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/books.js" afterDir="false" />
-    </list>
+    <list default="true" id="84c50572-90f5-4490-848b-c5d9481390e2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -31,8 +26,8 @@
       <file leaf-file-name="books.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/routes/books.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            <state relative-caret-position="141">
+              <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -253,7 +248,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533573837292</updated>
-      <workItem from="1533573838655" duration="16365000" />
+      <workItem from="1533573838655" duration="17384000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;3">
       <created>1533606798347</created>
@@ -269,11 +264,25 @@
       <option name="project" value="LOCAL" />
       <updated>1533608279694</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mongoose and mongo connected; post and get:id working on books model">
+      <created>1533610241319</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533610241319</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add get and delete methods to books w/ mongoose + mongo">
+      <created>1533610850154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533610850154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16365000" />
+    <option name="totallyTimeSpent" value="17384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="168" width="937" height="662" extended-state="0" />
@@ -328,7 +337,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&lt;3" />
     <MESSAGE value="make sure gitignore is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="make sure gitignore is working" />
+    <MESSAGE value="mongoose and mongo connected; post and get:id working on books model" />
+    <MESSAGE value="add get and delete methods to books w/ mongoose + mongo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add get and delete methods to books w/ mongoose + mongo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -429,8 +440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/routes/books.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state relative-caret-position="141">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
         </state>
       </provider>
     </entry>

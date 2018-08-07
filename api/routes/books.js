@@ -62,9 +62,20 @@ router.get('/:bookId', (req, res, next) => {
 
 router.patch('/:bookId', (req, res, next) => {
     const id = req.params.bookId;
-    res.status(200).json({
-        message: 'updated product number ' + id
-    });
+    const updateOps = {};
+    for(const ops of req.body){
+        updateOps[ops.propName] = ops.value;
+    }
+    Book.update({ _id: id }, {$set: updateOps})
+        .exec()
+        .then(result => {
+            console.log(result);
+            res.status(200).json(result);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({error: err});
+        });
 });
 
 router.delete('/:bookId', (req, res, next) => {
