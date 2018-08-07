@@ -53,8 +53,7 @@ body {
   line-height: 60px;
   background-color: #f5f5f5;
   color: pink;
-  border-top-color: black;
-  border-top: 10px;
+  border-top: 10px black;
 }
 
 
