@@ -2,9 +2,12 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const bookRoutes = require('./routes/books');
 const reviewRoutes = require('./routes/reviews');
+
+mongoose.connect()
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false}));
