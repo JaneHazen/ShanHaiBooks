@@ -6,10 +6,27 @@ const Book = require('../models/book');
 
 router.get('/', (req, res, next) => {
     Book.find()
+        .select('title authorFirstName authorLastname country _id')
         .exec()
         .then(docs => {
+            const response = {
+                count: docs.length,
+                books: docs.map(doc => {
+                    return {
+                        title: doc.title,
+                        authorFirstName: doc.authorFirstName,
+                        authorLastName: doc.authorLastName,
+                        id: doc._id,
+                        country: doc.country,
+                        request:{
+                            type: "GET",
+                            url: "http://localhost:4000/books/" + doc._id
+                        }
+                    }
+                })
+            };
             console.log(docs);
-            res.status(200).json(docs);
+            res.status(200).json(response);
         })
         .catch(err => {
             console.log(err);
@@ -25,11 +42,23 @@ router.post('/', (req, res, next) => {
         authorLastName: req.body.authorLastName,
         country: req.body.country,
     });
-    book.save().then(result => {
+    book
+        .save()
+        .then(result => {
         console.log(result);
         res.status(201).json({
             message: 'handling post request to /books',
-            createdBook: book
+            createdBook: {
+                title: result.title,
+                authorFirstName: result.authorFirstName,
+                authorLastName: result.authorLastName,
+                country: result.country,
+                id: result._id,
+                request: {
+                    type: "GET",
+                    url: "http://localhost:4000/books/" + result._id
+                }
+            }
         });
     })
     .catch(err => {
