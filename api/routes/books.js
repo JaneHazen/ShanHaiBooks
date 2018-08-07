@@ -1,5 +1,8 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
+
+const Book = require('../models/book');
 
 router.get('/', (req, res, next) => {
     res.status(200).json({
@@ -8,29 +11,46 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-    const book = {
+    const book = new Book({
+       _id: new mongoose.Types.ObjectId(),
         title: req.body.title,
-        author: req.body.author,
+        authorFirstName: req.body.authorFirstName,
+        authorLastName: req.body.authorLastName,
         country: req.body.country,
-    };
-    res.status(201).json({
-        message: 'handling post request to /books',
-        createdBook: book
+    });
+    book.save().then(result => {
+        console.log(result);
+        res.status(201).json({
+            message: 'handling post request to /books',
+            createdBook: book
+        });
     })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json({
+            error: err
+        });
+    });
 });
 
 router.get('/:bookId', (req, res, next) => {
    const id = req.params.bookId;
-   if( id === 'special') {
-       res.status(200).json({
-           message: 'you discovered the special id',
-           id: id
+   Book.findById(id)
+       .exec()
+       .then(doc => {
+           console.log(doc);
+           if(doc){
+               res.status(200).json(doc);
+           } else {
+               res.status(404).json({message: 'not found'});
+           }
+       })
+       .catch(err => {
+           console.log(err);
+           res.status(500).json({
+               error: err
+           });
        });
-   } else {
-       res.status(200).json({
-           message: 'hi'
-       });
-   }
 });
 
 router.patch('/:bookId', (req, res, next) => {

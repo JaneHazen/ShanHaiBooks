@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 const bookRoutes = require('./routes/books');
 const reviewRoutes = require('./routes/reviews');
 
-mongoose.connect()
+const envVariables = require('../private');
+mongoose.connect('mongodb://shanhai:' + envVariables.env.MONGO_ATLAS_PW + '@shanhai-shard-00-00-nqztf.mongodb.net:27017,shanhai-shard-00-01-nqztf.mongodb.net:27017,shanhai-shard-00-02-nqztf.mongodb.net:27017/test?ssl=true&replicaSet=shanhai-shard-0&authSource=admin&retryWrites=true');
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false}));
