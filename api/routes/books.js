@@ -34,6 +34,38 @@ router.get('/', (req, res, next) => {
         });
 });
 
+router.get('/:country', (req, res, next) => {
+    const country = req.params.country;
+    Book.find()
+        .select('title authorFirstName authorLastname country _id')
+        .where('country', country)
+        .exec()
+        .then(docs => {
+            const response = {
+                count: docs.length,
+                books: docs.map(doc => {
+                    return {
+                        title: doc.title,
+                        authorFirstName: doc.authorFirstName,
+                        authorLastName: doc.authorLastName,
+                        id: doc._id,
+                        country: doc.country,
+                        request:{
+                            type: "GET",
+                            url: "http://localhost:4000/books/" + doc._id
+                        }
+                    }
+                })
+            };
+            console.log(docs);
+            res.status(200).json(response);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({error: err});
+        });
+});
+
 router.post('/', (req, res, next) => {
     const book = new Book({
        _id: new mongoose.Types.ObjectId(),
