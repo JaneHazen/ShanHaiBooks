@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
+const checkAuth = require('../middleware/check-auth');
 
 const Book = require('../models/book');
 
@@ -66,7 +67,7 @@ router.get('/:country', (req, res, next) => {
         });
 });
 
-router.post('/', (req, res, next) => {
+router.post('/', checkAuth, (req, res, next) => {
     const book = new Book({
        _id: new mongoose.Types.ObjectId(),
         title: req.body.title,
