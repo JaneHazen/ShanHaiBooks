@@ -69,7 +69,7 @@ router.get('/:country', (req, res, next) => {
 
 router.post('/', checkAuth, (req, res, next) => {
     const book = new Book({
-       _id: new mongoose.Types.ObjectId(),
+        _id: new mongoose.Types.ObjectId(),
         title: req.body.title,
         authorFirstName: req.body.authorFirstName,
         authorLastName: req.body.authorLastName,

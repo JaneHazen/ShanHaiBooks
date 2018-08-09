@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84c50572-90f5-4490-848b-c5d9481390e2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/api/middleware/check-auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/routes/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/books.js" afterDir="false" />
     </list>
@@ -18,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="books.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/routes/books.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+            <state relative-caret-position="238">
+              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -81,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check-auth.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="check-auth.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/middleware/check-auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+            <state relative-caret-position="238">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -148,8 +147,8 @@
         <option value="$PROJECT_DIR$/api/models/user.js" />
         <option value="$PROJECT_DIR$/private.json" />
         <option value="$PROJECT_DIR$/api/routes/user.js" />
-        <option value="$PROJECT_DIR$/api/routes/books.js" />
         <option value="$PROJECT_DIR$/api/middleware/check-auth.js" />
+        <option value="$PROJECT_DIR$/api/routes/books.js" />
       </list>
     </option>
   </component>
@@ -169,10 +168,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="191" />
-    <option name="width" value="989" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="210" />
+    <option name="width" value="1097" />
     <option name="height" value="828" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -263,7 +262,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533573837292</updated>
-      <workItem from="1533573838655" duration="32793000" />
+      <workItem from="1533573838655" duration="34766000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;3">
       <created>1533606798347</created>
@@ -363,17 +362,31 @@
       <option name="project" value="LOCAL" />
       <updated>1533664259261</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add check-auth middlware, put token in headers">
+      <created>1533665810699</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1533665810699</updated>
+    </task>
+    <task id="LOCAL-00016" summary="cleanup auth">
+      <created>1533792272248</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533792272249</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32793000" />
+    <option name="totallyTimeSpent" value="34766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="153" width="791" height="662" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5612009" visible="true" weight="0.31788933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5612009" visible="true" weight="0.1608073" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" weight="0.43533698" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -382,7 +395,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" sideWeight="0.43879908" side_tool="true" weight="0.31865585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.38797814" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.2937931" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -435,7 +448,9 @@
     <MESSAGE value="add user model/route with bcrypted password" />
     <MESSAGE value="check to ensure user uniqueness, add delete function for user" />
     <MESSAGE value="add JWT and token to user auth for login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add JWT and token to user auth for login" />
+    <MESSAGE value="add check-auth middlware, put token in headers" />
+    <MESSAGE value="cleanup auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup auth" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -558,17 +573,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/books.js">
+    <entry file="file://$PROJECT_DIR$/api/middleware/check-auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        <state relative-caret-position="238">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/middleware/check-auth.js">
+    <entry file="file://$PROJECT_DIR$/api/routes/books.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        <state relative-caret-position="238">
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
         </state>
       </provider>
     </entry>
