@@ -1,14 +1,9 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
-// components
 
-import Login from './Login'
-import Logout from './Logout'
-
-
-
-class Login extends React.Component {
+class Login extends Component {
 
     constructor(props){
         super(props);
@@ -48,6 +43,7 @@ class Login extends React.Component {
 
 
     render() {
+        console.log("HERE");
         return(
             <nav className="navbar navbar-inverse" style={{backgroundColor: "#efefef"}}>
                 <div className="container-fluid">
